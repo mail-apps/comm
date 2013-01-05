@@ -17,9 +17,6 @@ ac_add_options --enable-codesighs
 ac_add_options --disable-install-strip
 ac_add_options --enable-signmar
 
-# Enable ESR branding
-export MOZ_ESR=1
-
 # For NSS symbols
 export MOZ_DEBUG_SYMBOLS=1
 

@@ -4,9 +4,6 @@ ac_add_options --enable-update-packaging
 ac_add_options --enable-codesighs
 ac_add_options --enable-signmar
 
-# Enable ESR branding
-export MOZ_ESR=1
-
 . $topsrcdir/build/unix/mozconfig.linux
 
 # Avoid dependency on libstdc++ 4.5

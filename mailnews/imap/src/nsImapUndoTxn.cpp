@@ -548,7 +548,7 @@ NS_IMETHODIMP nsImapOfflineTxn::UndoTransaction(void)
     case nsIMsgOfflineImapOperation::kFlagsChanged:
     case nsIMsgOfflineImapOperation::kDeletedMsg:
     {
-      if (m_srcHdrs.IsEmpty())
+      if (m_srcHdrs.Count() == 0)
       {
         NS_ASSERTION(false, "No msg header to apply undo.");
         break;

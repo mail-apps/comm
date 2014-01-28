@@ -66,6 +66,7 @@ package-tests::
 	@rm -f "$(DIST)/$(PKG_PATH)$(TEST_PACKAGE)"
 ifndef UNIVERSAL_BINARY
 	$(NSINSTALL) -D $(DIST)/$(PKG_PATH)
+endif
 	cd $(PKG_STAGE) && \
 	  zip -r9D "$(call core_abspath,$(DIST)/$(PKG_PATH)$(TEST_PACKAGE))" \
 	  * -x \*/.mkdir.done
